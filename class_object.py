@@ -59,4 +59,6 @@ user1=user("bharath","abc123")
 user2=user("kiran","345jg")
 user3=user("john","lkk56")
 
-user1.login().register()
+user1.login().register() #chained
+
+
