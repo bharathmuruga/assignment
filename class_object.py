@@ -61,4 +61,27 @@ user3=user("john","lkk56")
 
 user1.login().register() #chained
 
+from abc import ABC, abstractmethod
+#abstract
+class vehicle(ABC):# abstract class
+  @abstractmethod # decotrator
+  def start(self):
+    pass
+  def stop(self):
+    pass
+
+
+class bike(vehicle):
+  def start(self):
+    print("you are riding a bike...")
+
+class car(vehicle):
+  def start(self):
+    print("riding car...")
+
+car1=car()
+car1.start()
+
+
+
 
