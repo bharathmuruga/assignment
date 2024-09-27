@@ -82,6 +82,9 @@ class car(vehicle):
 car1=car()
 car1.start()
 
+def set_color(car,color):
+  car.color=color
 
-
+set_color(car1,"blue")
+print(car1.color)
 
