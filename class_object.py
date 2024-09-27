@@ -41,3 +41,22 @@ class student(person):
 
 x= student("mike","joe",2019)
 x.welcome()
+
+class user:
+  users=0
+  def __init__(self,user_name,pwd):
+    self.user_name=user_name #instance variable
+    self.pwd=pwd
+    user.users+=1
+  def register(self):
+    print("registering.." + self.user_name)
+  
+  def login(self):
+    print("logging..."+self.user_name)
+    return self
+  
+user1=user("bharath","abc123")
+user2=user("kiran","345jg")
+user3=user("john","lkk56")
+
+user1.login().register()
