@@ -21,7 +21,8 @@ def display():
    print("3:delete")
    print("4:exit")
 
-while True:
+def main():
+ while True:
   display()
 
   user=input("enter(1/2/3/4): ")
@@ -42,4 +43,7 @@ while True:
         print("to do list is EMPTY")
         break
      delete_task(delete_item)
+if __name__=="__main__":
+   main()
+
    
